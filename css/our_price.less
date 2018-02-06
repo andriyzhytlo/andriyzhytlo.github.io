@@ -1,0 +1,118 @@
+@Color_bg_white: #fff;
+@Color_bg_grey: #f3f3f3;							
+@Color_text_dark: #333b46;							
+@Color_text_white: #fff;							
+@Font_family_main: 'Open Sans';				
+@Font_family_headers_1_2: 'Source Sans Pro';
+
+
+// SECTION OUR PRICE //
+
+.our_price {
+	background-color: @Color_bg_grey;
+	min-height: 100vh;
+}
+
+
+.cards_header h2 {
+	padding-top: 80px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	word-spacing: 2px;
+	text-align: center;
+}
+
+.cards_header p {
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.card_1, .card_2, .card_3 {
+	flex-basis: 20%;
+	background-color: #fff;
+	margin: 3%;
+	min-width: 200px;
+}
+
+.card_1_header, .card_3_header, .card_2_header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 67px;
+	background-color: #19bd9a;
+}
+
+.card_1_header h3, .card_3_header h3 {
+	font-family: "Open Sans";
+	font-size: 20px;
+	text-transform: uppercase;
+	color: @Color_text_white;
+	font-weight: 800;
+}
+
+.card_1_content, .card_3_content, .card_2_content {
+	height: 235px;
+}
+
+.card_1_content p, .card_3_content p, {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Open Sans";
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 15px;
+}
+
+.card_2_content p {
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	padding: 15%;
+	line-height: 2;
+}
+
+.card_2_header h3 {
+	font-family: "Open Sans";
+	font-size: 16px;
+	color: @Color_text_white;
+	font-weight: 400;
+}
+
+.card_2_header {
+	display: flex;
+	align-items: center;
+}
+
+p.cards_price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Source Sans Pro";
+	font-size: 42px;
+	font-weight: 900;
+	color: #19bd9a;
+}
+
+.card_1_content, .card_3_content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+i.fa-angle-right {
+	color: #fff;
+	margin-left: 15px;
+}

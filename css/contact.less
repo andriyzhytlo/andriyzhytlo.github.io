@@ -1,0 +1,87 @@
+@Color_bg_white: #fff;
+@Color_bg_grey: #f3f3f3;							
+@Color_text_dark: #333b46;							
+@Color_text_white: #fff;							
+@Font_family_main: 'Open Sans';				
+@Font_family_headers_1_2: 'Source Sans Pro';
+
+
+// SECTION CONTACT US //
+
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: @Color_bg_grey;
+	min-height: 100vh;
+}
+
+.contant_header h2 {
+	padding-top: 80px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	word-spacing: 2px;
+	text-align: center;
+}
+
+.contant_header p {
+	padding-top: 20px;
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+.contact_forms {
+	display: flex;
+  	flex-flow: row wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+.form {
+	flex-basis: 20%;
+	background-color: #fff;
+	margin: 3%;
+	min-width: 200px;
+}
+
+.form i {
+	color: #fff; 
+}
+
+.form p {
+	margin: 25px 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.fa-envelope-o, .fa-map-marker, .fa-phone {
+	font-size: 50px;
+}
+
+.header_mail_form, .header_location_form, .header_phone_form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 145px;
+}
+
+.header_mail_form {
+	background: url(../img/section_contact/bg_mail.jpg) no-repeat center top;
+}
+
+.header_location_form {
+	background: url(../img/section_contact/bg_location.jpg) no-repeat center top;
+}
+
+.header_phone_form {
+	background: url(../img/section_contact/bg_phone.jpg) no-repeat center top;
+}
+
+.content_mail_form, .content_location_form, .content_phone_form {
+	height: 127px;
+}
+
+
