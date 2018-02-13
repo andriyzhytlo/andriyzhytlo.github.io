@@ -31,7 +31,7 @@
 	margin: 0 auto;
 }
 
-.contact_forms {
+.contact_cards {
 	display: flex;
   	flex-flow: row wrap;
 	flex-direction: row;
@@ -84,4 +84,36 @@
 	height: 127px;
 }
 
+.contact_form {
+	display: flex;
+	justify-content: center;
+	height: 550px;
+	background: #fff;
+}
 
+.contact_form form {
+	box-sizing: border-box;
+	padding: 60px;
+}
+
+.contact_form input {
+	width: 286px;
+	height: 40px;
+	margin: 20px;
+	padding-left: 10px;
+}
+
+.contact_form textarea {
+	width: 940px;
+	margin-top: 10px;
+	height: 190px;
+}
+
+.contact_form input[type="submit"] {
+	margin-top: 30px;
+	background: #19bd9a;
+	width: 940px;
+	border: none;
+	font-size: 14px;
+    color: @Color_text_white;
+}

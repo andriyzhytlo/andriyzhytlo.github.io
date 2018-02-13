@@ -22,30 +22,33 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/iconified/apple-touch-icon-180x180.png" />
 </head>
 <body>
-	<header class="wrapper">
-			<div class="navbar">
-				<a class="logo" href="#">
-					<img src="img/section_header/logo.png" alt="Bouncy" >
-				</a>
-				<nav>
-					<ul>
-						<li><a href="#">Hello</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
+	<header>
+			<div class="logo">
+					<a href="#"><img src="img/section_header/logo.png" alt="Bouncy" ></a>
 			</div>
-			<div class="header_title">
-				<h1>We Are Code Cafe</h1>
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+		<nav>
+			<div class="menu-icon">
+				<i class="fa fa-bars" aria-hidden="true"></i>
 			</div>
-			<div class="header_btn">
-					<a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+			<div class="menu">
+				<ul>
+					<li><a href="#">Hello</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
 			</div>
+		</nav>
+		<div class="header_title">
+			<h1>We Are Code Cafe</h1>
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+		</div>
+		<div class="header_btn">
+				<a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+		</div>
 	</header>
 	<main>
 		<section class="hello">
@@ -88,7 +91,25 @@
 			</div>
 		</section>
 		<section class="featured_projects">
-			
+			<div class="projects_title">
+				<h2>Featured projects</h2>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  praesentium</p>
+			</div>
+			<div class="projects">
+				<div class="project_1">
+					
+				</div>
+				<div class="project_2">
+					
+				</div>
+				<div class="project_3">
+					
+				</div>
+			</div>
+			<div class="projects_cta">
+				<p>At vero eos et <span>accusamus</span> et iusto odio dignissimos ducimus qui blanditiis </p>
+				<button>Submit Now</button>
+			</div>
 		</section>
 		<section class="services">
 			
@@ -165,7 +186,7 @@
 				<h2>Contact us</h2>
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
 			</div>
-			<div class="contact_forms">
+			<div class="contact_cards">
 				<div class="form">
 					<div class="header_mail_form">
 						<i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -194,16 +215,47 @@
 					</div>
 				</div>
 			</div>
-			
+			<div class="contact_form">
+				<form action="">
+					<input type="text" name="firstname" value="Your name">
+					<input type="email" name="email" value="Email address">
+					<input type="text" name="subject" value="Subject"><br>
+					<textarea name="message" rows="10" cols="30"></textarea><br>
+					<input type="submit" value="SUBMIT">
+				</form>
+			</div>
 		</section>
 		<section class="map">
-			
+			<p>Find us on the map</p>
 		</section>
 	</main>
 	<footer>
-		
+		<img src="img/section_footer/logo_black.png" alt="Bouncy" >
+		<p>Copyright 2015. All rights Reserved</p>
 	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		
+		//Menu toggle-button
+
+		$(document).ready(function(){
+			$(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		});
+
+		//Scrolling Effect
+	
+		$(window).on("scroll", function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black');
+			}
+		});
+
+	</script>
 </body>
 </html>
