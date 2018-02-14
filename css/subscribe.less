@@ -28,7 +28,7 @@
 
 .subscribe_header h2, p {
 	text-align: center;
-	margin-top: 20px;
+	margin: 10px;
 }
 
 .subscribe_header p {
@@ -60,6 +60,7 @@
 .subform {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	margin-top: 40px;
 }
 
@@ -72,4 +73,33 @@
 	width: 150px;
 	height: 40px;
 	margin: 10px 5px;
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+
+}
+
+
+	/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.subform input[type="submit"] {
+		padding: 10px 25px;
+		width: 360px; 
+		margin: 10px;
+	}
+
+	.subform {
+		margin-top: 10px;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
 }

@@ -84,36 +84,84 @@
 	height: 127px;
 }
 
+
+// FORM TO FILL //
+
+
 .contact_form {
-	display: flex;
-	justify-content: center;
-	height: 550px;
+	min-height: 450px;
 	background: #fff;
 }
 
 .contact_form form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	box-sizing: border-box;
 	padding: 60px;
 }
 
 .contact_form input {
-	width: 286px;
 	height: 40px;
-	margin: 20px;
-	padding-left: 10px;
 }
 
 .contact_form textarea {
-	width: 940px;
-	margin-top: 10px;
 	height: 190px;
+	margin: 10px 0;
+	border: 1px solid #d8dce0;
 }
 
 .contact_form input[type="submit"] {
-	margin-top: 30px;
+	margin-top: 10px;
 	background: #19bd9a;
-	width: 940px;
+	width: 100%;
 	border: none;
 	font-size: 14px;
-    color: @Color_text_white;
+	color: @Color_text_white;
+	height: 53px;
+	cursor: pointer;
+}
+
+.fill_form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.fill_form input {
+	width: 350px;
+	margin: 10px 0;
+	border: 1px solid #d8dce0;
+}
+
+.contact_form input[type="text"], input[type="email"] {
+	padding-left: 20px;
+	font-size: 12px;
+	color: #a9a9a9;
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.fill_form input {
+		width: 400px; 
+	}
+}
+
+
+	/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.fill_form input {
+		width: 610px; 
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+
 }
