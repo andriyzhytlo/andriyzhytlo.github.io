@@ -8,6 +8,10 @@
 
 // SECTION PORTFOLIO //
 
+.portfolio {
+    background-color: @Color_bg_grey;
+	min-height: 100vh;
+}
 
 .portfolio_header h2 {
     display: flex;
@@ -48,10 +52,8 @@
 
                 a {
                     text-decoration: none;
-                    padding: 0px 20px;
+                    padding: 10px 10px;
                     outline: 0;
-                    border: 1px solid rgba(255, 255, 255, 0);
-                    border-radius: 15px;
                     box-sizing: border-box;
 			}
 		}
@@ -61,8 +63,12 @@
 .portfolio_menu a:hover, a:focus {
 	text-decoration: none;
 	outline: 0;
-	border: 1px solid #fff;
+	border-bottom: 2px solid #19bd9a;
 	box-sizing: border-box;
+}
+
+.portfolio_menu a:visited {
+    color: @Color_text_dark;
 }
 
 .works_columns {
@@ -86,7 +92,7 @@
     background: url(../img/section_portfolio/CTA_BG.jpg) center no-repeat;
     display: flex;
     flex-direction: column;
-    margin: 40px auto 100px auto;
+    margin: 40px auto 0 auto;
 }
 
 .portfolio_cta p {
@@ -109,4 +115,82 @@
     cursor: pointer;
     width: 140px;
     margin: 30px auto 50px auto;
+}
+
+
+// WORK`S HOVER //
+
+
+.work_box_1, .work_box_2, .work_box_3, .work_box_4, .work_box_5, .work_box_6, .work_box_7, .work_box_8, .work_box_9, .work_box_10, .work_box_11, .work_box_12 {
+    position: relative;
+    overflow: hidden;
+}
+
+.content_box_1, .content_box_2, .content_box_3, .content_box_4, .content_box_5, .content_box_6, .content_box_7, .content_box_8, .content_box_9, .content_box_10, .content_box_11, .content_box_12 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: .5s;
+}
+
+.content_box_1 h3, .content_box_2 h3, .content_box_3 h3, .content_box_4 h3, .content_box_5 h3, .content_box_6 h3, .content_box_7 h3, .content_box_8 h3, .content_box_9 h3, .content_box_10 h3, .content_box_11 h3, .content_box_12 h3 {
+    font-family: "Source Sans Pro";
+    text-transform: uppercase;
+    letter-spacing: 7px;
+	word-spacing: 2px;
+    color: #19bd9a;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+}
+
+.content_box_1 p, .content_box_2 p, .content_box_3 p, .content_box_4 p, .content_box_5 p, .content_box_6 p, .content_box_7 p, .content_box_8 p, .content_box_9 p, .content_box_10 p, .content_box_11 p, .content_box_12 p {
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    line-height: 1.5;
+    margin: 40% 12% 20% 12%;
+}
+
+.work_box_1:hover .content_box_1, .work_box_2:hover .content_box_2, .work_box_3:hover .content_box_3, .work_box_4:hover .content_box_4, .work_box_5:hover .content_box_5, .work_box_6:hover .content_box_6, .work_box_7:hover .content_box_7, .work_box_8:hover .content_box_8, .work_box_9:hover .content_box_9, .work_box_10:hover .content_box_10, .work_box_11:hover .content_box_11, .work_box_12:hover .content_box_12 {
+    left: 0;
+}
+
+.icon_box_1, .icon_box_2, .icon_box_3, .icon_box_4, .icon_box_5, .icon_box_6, .icon_box_7, .icon_box_8, .icon_box_9, .icon_box_10, .icon_box_11, .icon_box_12 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 4% 12%;
+}
+
+.icon_link_1 i, .icon_heart_1 i, .icon_link_2 i, .icon_heart_2 i, .icon_link_3 i, .icon_heart_3 i, .icon_link_4 i, .icon_heart_4 i, .icon_link_5 i, .icon_heart_5 i, .icon_link_6 i, .icon_heart_6 i, .icon_link_7 i, .icon_heart_7 i, .icon_link_8 i, .icon_heart_8 i, .icon_link_9 i, .icon_heart_9 i, .icon_link_10 i, .icon_heart_10 i, .icon_link_11 i, .icon_heart_11 i, .icon_link_12 i, .icon_heart_12 i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon_box_1 i, .icon_box_2 i, .icon_box_3 i, .icon_box_4 i, .icon_box_5 i, .icon_box_6 i, .icon_box_7 i, .icon_box_8 i, .icon_box_9 i, .icon_box_10 i, .icon_box_11 i, .icon_box_12 i {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+
+
+.content_box_3 h3, .content_box_4 h3, .content_box_9 h3, .content_box_11 h3 {
+    top: 10%;
+}
+
+.content_box_3 p, .content_box_4 p, .content_box_9 p, .content_box_11 p {
+    margin: 20% 12% 10% 12%;
 }
